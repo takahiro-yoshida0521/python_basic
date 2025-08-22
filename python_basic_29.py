@@ -18,9 +18,9 @@ for item_name in items:
         # if 文を用いて、 money の値が 0 のときの条件を分岐してください	
 
 	# 変数moneyの値が0のとき、'財布が空になりました'と出力して、繰り返し処理を終了させてください。
-    elif money == total_price:
-        print('財布が空になりました')
-        break
+        if money == 0:
+            print('財布が空になりました')
+            break
 
     else:	
         print('お金が足りません')	
